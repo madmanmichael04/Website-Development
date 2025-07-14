@@ -1,0 +1,44 @@
+h1 {
+   background-color: rgb(0, 143, 204);
+   color: white;
+   padding: 10px;
+   text-align: center;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #ffffff;
+   color: #333;
+   margin: 0;
+   padding: 20px;
+   text-align: center;
+}
+
+#welcome-screen {
+   margin-top: 40px;
+   padding: 30px;
+   background-color: #f5f5f5;
+   border-radius: 8px;
+}
+
+#welcome-screen h2 {
+   color: #0077cc;
+   font-size: 28px;
+   margin-bottom: 15px;
+}
+
+#welcome-screen u1 {
+   list-style: none;
+   padding: 0;
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+#welcome-screen li {
+   margin: 10px 0;
+}
+
+#welcome-screen p {
+   font-size: 16px;
+   margin: 15px 0;
+}
