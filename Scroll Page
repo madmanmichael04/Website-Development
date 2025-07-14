@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Computer Base Builds</title>      
-   </head>
-   <body>
-      <h1>Computer Base Builds</h1>
-      <p>From box to battle ready!</p>
-   </body>
+
+<head>
+   <title>Computer Base Builds</title>
+   <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+   <h1>Computer Base Builds</h1>
+   <p>From box to battle ready!</p>
+
+   <section id = "welcome-screen">
+      <h2>Welcome to Computer Base Builds</h2>
+      <p>Whether you're cheking emails, working remotely, or gearing up for high-performance gaming - <strong>we've got a build for you.</strong></p>
+
+      <u1>
+         <li><strong>Basic</strong> builds for everyday use.</li>
+         <li><strong>Practical</strong> systems built for balance and reliability.</li>
+         <li><strong>Performance</strong> machines designed to push limits.</li>
+         </u1>
+
+         <p><em>Scroll down to find the perfect build for your needs. From box to battle ready - it's that simple.</em></p>
+</body>
+
 </html>
