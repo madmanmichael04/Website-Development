@@ -27,7 +27,7 @@ body {
    margin-bottom: 15px;
 }
 
-#welcome-screen u1 {
+#welcome-screen ul {
    list-style: none;
    padding: 0;
    font-size: 18px;
