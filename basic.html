@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <title>Basic Build – Computer Base Builds</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <h1>Basic Build</h1>
-   <p>Perfect for everyday computing — email, browsing, video calls, and more.</p>
+   <header>
+      <h1 id="build-title">Basic Build</h1>
+      <p aria-describedby="build-title">Perfect for everyday computing — email, browsing, video calls, and more.</p>
+   </header>
 
-   <section class="specs">
-      <img src = "Basic Computer.jpg" alt = "Basic Build" style = "width: 100%; max-width: 500px; display: block; margin: 0 auto 20px; border-radius: 10px;">
-      <ul>
-         <li><strong>CPU:</strong> Intel Core i3-13100 (4-Core, 8-Thread)</li>
-         <li><strong>GPU:</strong> Integrated Intel UHD Graphics 730</li>
-         <li><strong>RAM:</strong> 8GB DDR4 (3200MHz)</li>
-         <li><strong>Storage:</strong> 256GB NVMe SSD</li>
-         <li><strong>Motherboard:</strong> ASUS PRIME B660M-A</li>
-         <li><strong>Power Supply:</strong> 450W 80+ Bronze</li>
-         <li><strong>Case:</strong> Compact Micro-ATX Case with 1x rear fan</li>
-         <li><strong>Operating System:</strong> Windows 11 Home</li>
-      </ul>
-   </section>
+   <main>
+      <section class="specs" aria-label="Specifications for Basic Computer Build">
+         <img src="Basic Computer.jpg" alt="Basic Build desktop computer" style="width:100%; max-width:500px; display:block; margin: 0 auto 20px; border-radius:10px;">
+         <ul>
+            <li><strong>CPU:</strong> Intel Core i3-13100</li>
+            <li><strong>GPU:</strong> Integrated Intel UHD Graphics 730</li>
+            <li><strong>RAM:</strong> 8GB DDR4</li>
+            <li><strong>Storage:</strong> 256GB NVMe SSD</li>
+            <li><strong>Motherboard:</strong> ASUS PRIME B660M-A</li>
+            <li><strong>Power Supply:</strong> 450W 80+ Bronze</li>
+            <li><strong>Case:</strong> Micro-ATX Case</li>
+            <li><strong>Operating System:</strong> Windows 11 Home</li>
+         </ul>
+      </section>
 
-   <section class = "user-form">
+      <section class="user-form" aria-label="User contact form">
          <h2>Get More Info or Request a Quote</h2>
-         <section class="user-form">
-            <h2>Get More Info or Request a Quote</h2>
-            <form id="quote-form">
-               <label for="first-name">First Name:</label>
-               <input type="text" id="first-name" name="first_name" required>
-         
-               <label for="last-name">Last Name:</label>
-               <input type="text" id="last-name" name="last_name" required>
-         
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required>
-         
-               <label for="phone">Phone Number:</label>
-               <input type="tel" id="phone" name="phone" required>
-         
-               <button type="submit">Submit</button>
-            </form>
-         
-            <p id="form-message" class="form-message"></p>
-         </section>
-         
-         <script src="form.js"></script>
+         <form id="quote-form" aria-describedby="form-message">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+         </form>
+         <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </section>
+   </main>
+
+   <script src="form.js"></script>
 </body>
 
 </html>
