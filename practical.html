@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <title>Practical Build – Computer Base Builds</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <h1>Practical Build</h1>
-   <p>Reliable for both work and casual gaming — a balanced and versatile system.</p>
+   <header>
+      <h1 id="build-title">Practical Build</h1>
+      <p aria-describedby="build-title">Ideal for both work and casual gaming — balanced performance and reliability.
+      </p>
+   </header>
 
-   <section class="specs">
-      <img src = "Practical Computer.jpg" alt = "Practical Build" style = "width: 100%; max-width: 500px; display: block; margin: 0 auto 20px; border-radius: 10px;">
-      <ul>
-         <li><strong>CPU:</strong> AMD Ryzen 5 5600 (6-Core, 12-Thread)</li>
-         <li><strong>GPU:</strong> NVIDIA GeForce GTX 1660 Super (6GB)</li>
-         <li><strong>RAM:</strong> 16GB DDR4 (3200MHz)</li>
-         <li><strong>Storage:</strong> 500GB NVMe SSD + 1TB HDD</li>
-         <li><strong>Motherboard:</strong> MSI B550M PRO-VDH WiFi</li>
-         <li><strong>Power Supply:</strong> 550W 80+ Bronze</li>
-         <li><strong>Case:</strong> Mid-Tower Case with front airflow and 2 RGB fans</li>
-         <li><strong>Operating System:</strong> Windows 11 Home</li>
-      </ul>
-   </section>
+   <main>
+      <section class="specs" aria-label="Specifications for Practical Computer Build">
+         <img src="Practical Computer.jpg" alt="Practical Build desktop with mid-tower case and RGB fans" style="width:100%; max-width:500px; display:block; margin: 0 auto 20px; border-radius:10px;">
+         <ul>
+            <li><strong>CPU:</strong> AMD Ryzen 5 5600</li>
+            <li><strong>GPU:</strong> NVIDIA GeForce GTX 1660 Super</li>
+            <li><strong>RAM:</strong> 16GB DDR4</li>
+            <li><strong>Storage:</strong> 500GB NVMe SSD + 1TB HDD</li>
+            <li><strong>Motherboard:</strong> MSI B550M PRO-VDH WiFi</li>
+            <li><strong>Power Supply:</strong> 550W 80+ Bronze</li>
+            <li><strong>Case:</strong> Mid-Tower with RGB fans</li>
+            <li><strong>Operating System:</strong> Windows 11 Home</li>
+         </ul>
+      </section>
 
-   <section class = "user-form">
+      <section class="user-form" aria-label="User contact form">
          <h2>Get More Info or Request a Quote</h2>
-         <section class="user-form">
-            <h2>Get More Info or Request a Quote</h2>
-            <form id="quote-form">
-               <label for="first-name">First Name:</label>
-               <input type="text" id="first-name" name="first_name" required>
-         
-               <label for="last-name">Last Name:</label>
-               <input type="text" id="last-name" name="last_name" required>
-         
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required>
-         
-               <label for="phone">Phone Number:</label>
-               <input type="tel" id="phone" name="phone" required>
-         
-               <button type="submit">Submit</button>
-            </form>
-         
-            <p id="form-message" class="form-message"></p>
-         </section>
-         
-         <script src="form.js"></script>
+         <form id="quote-form" aria-describedby="form-message">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+         </form>
+         <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </section>
+   </main>
+
+   <script src="form.js"></script>
 </body>
 
 </html>
-
