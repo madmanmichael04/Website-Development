@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-   <meta charset="UTF-8">
-   <title>Computer Base Builds</title>
+   <title>Basic Build – Computer Base Builds</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <header role="banner">
-      <h1 id="main-title">Computer Base Builds</h1>
-      <p aria-describedby="main-title">From box to battle ready!</p>
-   </header>
+   <h1>Basic Build</h1>
+   <p>Perfect for everyday computing — email, browsing, video calls, and more.</p>
 
-   <main>
-      <section id="welcome-screen" aria-label="Welcome Introduction Section">
-         <h2>Welcome to Computer Base Builds</h2>
-         <p>Whether you're checking emails, working remotely, or gearing up for high-performance gaming — <strong>we’ve got a build for you.</strong></p>
+   <section class="specs">
+      <img src = "Basic Computer.jpg" alt = "Basic Build" style = "width: 100%; max-width: 500px; display: block; margin: 0 auto 20px; border-radius: 10px;">
+      <ul>
+         <li><strong>CPU:</strong> Intel Core i3-13100 (4-Core, 8-Thread)</li>
+         <li><strong>GPU:</strong> Integrated Intel UHD Graphics 730</li>
+         <li><strong>RAM:</strong> 8GB DDR4 (3200MHz)</li>
+         <li><strong>Storage:</strong> 256GB NVMe SSD</li>
+         <li><strong>Motherboard:</strong> ASUS PRIME B660M-A</li>
+         <li><strong>Power Supply:</strong> 450W 80+ Bronze</li>
+         <li><strong>Case:</strong> Compact Micro-ATX Case with 1x rear fan</li>
+         <li><strong>Operating System:</strong> Windows 11 Home</li>
+      </ul>
+   </section>
 
-         <ul>
-            <li><strong>💻 Basic</strong> builds for everyday use.</li>
-            <li><strong>🛠️ Practical</strong> systems built for balance and reliability.</li>
-            <li><strong>⚡ Performance</strong> machines designed to push limits.</li>
-         </ul>
-
-         <p><em>Scroll down to find the perfect build for your needs. From box to battle ready — it's that simple.</em></p>
-
-         <nav aria-label="Build Navigation Buttons">
-            <a href="basic.html" class="btn">Basic</a>
-            <a href="practical.html" class="btn">Practical</a>
-            <a href="performance.html" class="btn">Performance</a>
-         </nav>
-      </section>
-   </main>
+   <section class = "user-form">
+         <h2>Get More Info or Request a Quote</h2>
+         <section class="user-form">
+            <h2>Get More Info or Request a Quote</h2>
+            <form id="quote-form">
+               <label for="first-name">First Name:</label>
+               <input type="text" id="first-name" name="first_name" required>
+         
+               <label for="last-name">Last Name:</label>
+               <input type="text" id="last-name" name="last_name" required>
+         
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+         
+               <label for="phone">Phone Number:</label>
+               <input type="tel" id="phone" name="phone" required>
+         
+               <button type="submit">Submit</button>
+            </form>
+         
+            <p id="form-message" class="form-message"></p>
+         </section>
+         
+         <script src="form.js"></script>
 </body>
 
 </html>
