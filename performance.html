@@ -1,50 +1,57 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <title>Performance Build – Computer Base Builds</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <h1>Performance Build</h1>
-   <p>Built for gamers, streamers, and creators who demand top-tier power.</p>
+   <header>
+      <h1 id="build-title">Performance Build</h1>
+      <p aria-describedby="build-title">Top-tier power for gamers, streamers, and creators.</p>
+   </header>
 
-   <section class="specs">
-      <img src = "Performance Computer.jpg" alt = "Performance Build" style = "width: 100%; max-width: 500px; display: block; margin: 0 auto 20px; border-radius: 10px;">
-      <ul>
-         <li><strong>CPU:</strong> Intel Core i7-14700K (20-Core Hybrid)</li>
-         <li><strong>GPU:</strong> NVIDIA GeForce RTX 4070 Super (12GB)</li>
-         <li><strong>RAM:</strong> 32GB DDR5 (6000MHz)</li>
-         <li><strong>Storage:</strong> 1TB NVMe Gen4 SSD</li>
-         <li><strong>Motherboard:</strong> ASUS ROG STRIX Z790-E WiFi</li>
-         <li><strong>Power Supply:</strong> 750W 80+ Gold Modular</li>
-         <li><strong>Cooling:</strong> 240mm AIO Liquid Cooler</li>
-         <li><strong>Case:</strong> Premium RGB ATX Case with tempered glass</li>
-         <li><strong>Operating System:</strong> Windows 11 Pro</li>
-      </ul>
-   </section>
+   <main>
+      <section class="specs" aria-label="Specifications for Performance Computer Build">
+         <img src="Performance Computer.jpg" alt="Performance Build high-end gaming PC with glass panel and RGB lighting" style="width:100%; max-width:500px; display:block; margin: 0 auto 20px; border-radius:10px;">
+         <ul>
+            <li><strong>CPU:</strong> Intel Core i7-14700K</li>
+            <li><strong>GPU:</strong> NVIDIA GeForce RTX 4070 Super</li>
+            <li><strong>RAM:</strong> 32GB DDR5</li>
+            <li><strong>Storage:</strong> 1TB NVMe Gen4 SSD</li>
+            <li><strong>Motherboard:</strong> ASUS ROG STRIX Z790-E WiFi</li>
+            <li><strong>Power Supply:</strong> 750W 80+ Gold</li>
+            <li><strong>Cooling:</strong> 240mm AIO Liquid Cooler</li>
+            <li><strong>Case:</strong> Premium RGB ATX Case</li>
+            <li><strong>Operating System:</strong> Windows 11 Pro</li>
+         </ul>
+      </section>
 
-   <section class="user-form">
-      <h2>Get More Info or Request a Quote</h2>
-      <form action="submit.php" method="POST">
-         <label for="first-name">First Name:</label>
-         <input type="text" id="first-name" name="first_name" required>
-   
-         <label for="last-name">Last Name:</label>
-         <input type="text" id="last-name" name="last_name" required>
-   
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email" required>
-   
-         <label for="phone">Phone Number:</label>
-         <input type="tel" id="phone" name="phone" required>
-   
-         <button type="submit">Submit</button>
-      </form>
-   </section>
+      <section class="user-form" aria-label="User contact form">
+         <h2>Get More Info or Request a Quote</h2>
+         <form id="quote-form" aria-describedby="form-message">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+         </form>
+         <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </section>
+   </main>
+
+   <script src="form.js"></script>
 </body>
 
 </html>
-
