@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <title>Computer Base Builds</title>
-   <link rel = "stylesheet" href = "styles.css">
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <h1>Computer Base Builds</h1>
-   <p>From box to battle ready!</p>
+   <header role="banner">
+      <h1 id="main-title">Computer Base Builds</h1>
+      <p aria-describedby="main-title">From box to battle ready!</p>
+   </header>
 
-   <section id = "welcome-screen">
-      <h2>Welcome to Computer Base Builds</h2>
-      <p>Whether you're cheking emails, working remotely, or gearing up for high-performance gaming - <strong>we've got a build for you.</strong></p>
+   <main>
+      <section id="welcome-screen" aria-label="Welcome Introduction Section">
+         <h2>Welcome to Computer Base Builds</h2>
+         <p>Whether you're checking emails, working remotely, or gearing up for high-performance gaming — <strong>we’ve got a build for you.</strong></p>
 
-      <ul>
-         <li><strong>Basic</strong> builds for everyday use.</li>
-         <li><strong>Practical</strong> systems built for balance and reliability.</li>
-         <li><strong>Performance</strong> machines designed to push limits.</li>
+         <ul>
+            <li><strong>💻 Basic</strong> builds for everyday use.</li>
+            <li><strong>🛠️ Practical</strong> systems built for balance and reliability.</li>
+            <li><strong>⚡ Performance</strong> machines designed to push limits.</li>
          </ul>
 
-         <p><em>Scroll down to find the perfect build for your needs. From box to battle ready - it's that simple.</em></p>
+         <p><em>Scroll down to find the perfect build for your needs. From box to battle ready — it's that simple.</em></p>
 
-      <div class = "button-group">
-         <a href = "basic.html" class = "btn">Basic</a>
-         <a href = "practical.html" class = "btn">Practical</a>
-         <a href = "performance.html" class = "btn">Performance</a>
+         <nav aria-label="Build Navigation Buttons">
+            <a href="basic.html" class="btn">Basic</a>
+            <a href="practical.html" class="btn">Practical</a>
+            <a href="performance.html" class="btn">Performance</a>
+         </nav>
+      </section>
+   </main>
 </body>
 
 </html>
