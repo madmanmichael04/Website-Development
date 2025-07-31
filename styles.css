@@ -76,3 +76,16 @@ body {
    font-weight: bold;
    text-align: center;
 }
+
+#logo-link {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   z-index: 1000;
+   text-decoration: none;
+}
+
+#logo {
+   height: 100px;
+   width: auto;
+}
