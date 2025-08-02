@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Basic Build – Computer Base Builds</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <a href = "index.html" id = "logo-link" aria-label = "Go to homepage">
-      <img src = "logo.jpg" alt = "Computer Base Builds Logo" id = "logo">
+   <a href="index.html" id="logo-link" aria-label="Go to homepage">
+      <img src="logo.jpg" alt="Computer Base Builds Logo" id="logo">
    </a>
-   
+
    <header>
       <h1 id="build-title">Basic Build</h1>
       <p aria-describedby="build-title">Perfect for everyday computing — email, browsing, video calls, and more.</p>
@@ -21,7 +21,7 @@
 
    <main>
       <section class="specs" aria-label="Specifications for Basic Computer Build">
-         <img src="Basic Computer.jpg" alt="Basic Build desktop computer" style="width:100%; max-width:500px; display:block; margin: 0 auto 20px; border-radius:10px;">
+         <img src="Basic Computer.jpg" alt="Basic Build desktop computer" class="build-image">
          <ul>
             <li><strong>CPU:</strong> Intel Core i3-13100</li>
             <li><strong>GPU:</strong> Integrated Intel UHD Graphics 730</li>
@@ -36,7 +36,7 @@
 
       <section class="user-form" aria-label="User contact form">
          <h2>Get More Info or Request a Quote</h2>
-        <form id="quote-form" action="thankyou.html" method="GET" aria-describedby="form-message" novalidate>
+         <form id="quote-form" action="thankyou.html" method="GET" aria-describedby="form-message" novalidate>
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first_name" required>
 
@@ -53,8 +53,9 @@
          </form>
          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
       </section>
-      <div style="margin-top: 2rem;">
-         <button onclick = "history.back()" class = "btn">Back</button>
+
+      <div class="back-button-container">
+         <button onclick="history.back()" class="btn">Back</button>
       </div>
    </main>
 
