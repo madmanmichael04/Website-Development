@@ -1,3 +1,35 @@
+/* General Button Styling */
+.btn,
+button[type="submit"] {
+   display: inline-block;
+   margin: 10px;
+   padding: 12px 24px;
+   font-size: 16px;
+   font-family: 'Orbitron', sans-serif;
+   background-color: #0077cc;
+   color: white;
+   text-decoration: none;
+   border: none;
+   border-radius: 6px;
+   transition: background-color 0.3s ease;
+   cursor: pointer;
+}
+
+.btn:hover,
+button[type="submit"]:hover {
+   background-color: #005fa3;
+}
+
+/* For responsive button layout on small screens */
+@media screen and (max-width: 600px) {
+   .btn,
+   button[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+   }
+}
+
 /* Ensure image scales nicely */
 .build-image {
    width: 100%;
