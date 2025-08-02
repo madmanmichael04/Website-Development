@@ -1,142 +1,72 @@
-/* General Styles */
-h1 {
-   background-color: rgb(0, 143, 204);
-   color: white;
-   padding: 10px;
-   text-align: center;
-   font-size: 2rem;
+/* Ensure image scales nicely */
+.build-image {
+   width: 100%;
+   max-width: 500px;
+   display: block;
+   margin: 0 auto 20px;
+   border-radius: 10px;
 }
 
-body {
-   font-family: Arial, sans-serif;
-   background-color: #ffffff;
-   color: #333;
-   margin: 0;
-   padding: 20px;
-   text-align: center;
-}
-
-/* Welcome Section */
-#welcome-screen {
-   margin-top: 40px;
-   padding: 30px;
-   background-color: #f5f5f5;
-   border-radius: 8px;
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-#welcome-screen h2 {
-   color: #0077cc;
-   font-size: 1.75rem;
-   margin-bottom: 15px;
-}
-
-#welcome-screen ul {
-   list-style: none;
-   padding: 0;
-   font-size: 1.125rem;
-   line-height: 1.6;
+/* Form Styling */
+.user-form form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   max-width: 500px;
    margin: 0 auto;
-   max-width: 600px;
-   text-align: left;
+   padding: 20px;
 }
 
-#welcome-screen li {
-   margin: 10px 0;
-}
-
-#welcome-screen p {
+.user-form input,
+.user-form button {
+   padding: 10px;
    font-size: 1rem;
-   margin: 15px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
 }
 
-/* Buttons */
-.button-group {
-   margin-top: 30px;
-}
-
-.btn {
-   display: inline-block;
-   margin: 10px;
-   padding: 12px 24px;
-   font-size: 1rem;
-   font-family: 'Orbitron', sans-serif;
+.user-form button {
    background-color: #0077cc;
    color: white;
-   text-decoration: none;
-   border-radius: 6px;
-   transition: background-color 0.3s ease;
+   border: none;
+   cursor: pointer;
 }
 
-.btn:hover {
+.user-form button:hover {
    background-color: #005fa3;
 }
 
-/* List Styling */
-.specs ul {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-}
-
-/* Form Message */
-.form-message {
-   margin-top: 15px;
-   font-size: 1rem;
-   font-weight: bold;
+.back-button-container {
+   margin-top: 2rem;
    text-align: center;
 }
 
-/* Logo */
-#logo-link {
-   position: absolute;
-   top: 20px;
-   left: 20px;
-   z-index: 1000;
-   text-decoration: none;
-}
-
-#logo {
-   height: 80px;
-   width: auto;
-   max-width: 100%;
-}
-
-/* ---------- Responsive Section ---------- */
 @media screen and (max-width: 600px) {
    h1 {
       font-size: 1.5rem;
-      padding: 8px;
-   }
-
-   #welcome-screen {
-      padding: 20px;
-   }
-
-   #welcome-screen h2 {
-      font-size: 1.25rem;
-   }
-
-   #welcome-screen ul {
-      font-size: 1rem;
-      text-align: center;
-   }
-
-   .btn {
-      width: 100%;
-      box-sizing: border-box;
-      font-size: 1rem;
-   }
-
-   #logo-link {
-      position: static;
-      display: block;
-      margin: 10px auto;
    }
 
    #logo {
       height: 60px;
    }
+
+   .user-form form {
+      padding: 10px;
+   }
+
+   .btn {
+      width: 100%;
+   }
+
+   .build-image {
+      max-width: 100%;
+   }
+
+   #logo-link {
+      display: block;
+      position: static;
+      margin: 10px auto;
+      text-align: center;
+   }
 }
+
